@@ -1,1 +1,7 @@
 # Git ignore
+# All
+*
+
+# Except
+!Practica_NLP_*
+
