@@ -165,4 +165,7 @@ gr.Interface(fn=gradio_sentiment, inputs="text", outputs="json", title="Sentimen
     tab_names=["Speak", "NER", "Base64", "Text Transform", "Sentiment analysis"],
 )
 
+# Start the app: uvicorn main:app --reload
+# Gradio interface http://127.0.0.1:8000/ui
+# FastAPI interface http://127.0.0.1:8000/docs
 app = gr.mount_gradio_app(app, demo, path="/ui")
